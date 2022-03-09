@@ -1,0 +1,275 @@
+* { 
+	margin: 0;
+    padding: 0;
+}	
+	
+Body, html {
+	width: 100%;
+	height: 100%;
+	
+	text-align:justify;
+	background: #0c0c0c url(E:/site/images/zad_fon.jpg) no-repeat;
+    background-attachment: fixed ;
+    background-size: cover ;
+}
+.site-blok{
+	width:1200px; 
+	margin: 0 auto; 
+}
+.header {
+	max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+	background: black;
+}
+.pic_logo{
+	width: 250px;
+	height:130px;
+}
+.logo {
+	display: flex;
+	justify-content: space-around;
+}
+.name{
+	text-decoration: none;
+	color: #b8860b;
+	padding-top: 40px;
+}
+.navbar{
+	background: black;
+
+}
+.navbar{
+    margin-top: 10px;
+    text-decoration:none;
+    list-style-type: none;
+    min-width: 470px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+}
+.navbar li:hover ul { display: block; }
+
+.navbar ul li { float: none ; }
+
+.navbar li:hover { background-color: ff7b00; } 
+
+.navbar ul li:hover { background-color: #ff7b00; }
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 999999;
+}
+.navbar li {
+    float: left;
+    position: relative;
+    height: 100%;
+}
+.navbar li a {
+    display: inline-block; 
+    padding: 6px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar_text{
+	text-decoration: none;
+	color: #b8860b;
+}
+/*                                          БЛОК                          */
+.block {
+	max-width:1200px;
+	margin: 0 auto;
+	padding-top: 5px;
+	display: flex;
+    justify-content: space-around;
+	background: rgb(90 90 90 / 90%);
+
+}
+.pic_right {
+	width: 290px;
+	height: 415px
+}
+/*                                          ОБЩИЕ СТИЛИ                        */
+.name_left {
+	color: #b1ad92
+}
+.text-left1 {
+	padding-top: 5px;
+	color: #ececec;
+	font: 20px;
+}
+.text-left2 {
+	padding-top: 7px;
+	color: #ececec;
+}
+.text-left3 {
+	padding-top: 7px;
+	color: #ececec;
+    padding-bottom: 10px;
+}
+.text-left4 {
+	padding-top: 7px;
+	color: #ececec;
+    padding-bottom: 10px;
+}
+/*                                          БЛОК1                          */
+.block1{
+	max-width:1200px;
+	margin: 0 auto;
+	padding-top: 25px;
+	background: rgb(90 90 90 / 90%);
+	display: flex;
+	justify-content: space-evenly;
+}
+.block_left {
+    padding-right: 17px;
+}
+.perenos_saita {
+    text-decoration: none;
+	color: #b8860b;
+}
+/*                                          СЛАЙДЕР                        */
+.slide {
+    width: 1200px;
+    height: 672px;
+	left: 75px;
+    position: relative;
+    text-align: center;
+ }
+.slide  input {
+    display: none;
+}
+
+.slide  input + label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: rgba(90, 90, 90, 0.8);
+    border: 2px solid rgba(190, 190, 190, 0.8);
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    margin-right: 4px;
+    top: 75%;
+    transition: background 0.8s ease-out 0s;
+}
+
+.slide  input + label:hover {
+    background: rgba(250, 250, 250, 0.8);
+}
+
+.slide  input:checked + label {
+    background: rgba(220, 220, 220, 0.8);
+}
+	
+.slide  div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+	
+.slide  div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+.slide  input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+.slider2_1 {
+    margin-top: 152px;
+}
+.pic{
+	width: 1200px;
+}
+.pic2{
+	width: 1200px;
+    height: 672px;
+}
+.pic3{
+	width: 1200px;
+}
+/*                                          БЛОК2                          */
+.block2{
+	max-width:1200px;
+	margin: 0 auto;
+	padding-top: 25px;
+	background: rgb(90 90 90 / 90%);
+	display: flex;
+	justify-content: space-evenly;
+}
+.block-right1 {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+.pic_dlc1 {
+    width: 300px;
+    padding-bottom: 10px;
+}
+.pic_dlc2 {
+    width: 300px;
+}
+/*                                          БЛОК3                          */
+.block3 {
+    max-width:1200px;
+	margin: 0 auto;
+	padding-top: 25px;
+	background: rgb(90 90 90 / 90%);
+}
+.sujet {
+    color: #b1ad92;
+    text-align: center;
+}
+.game_text1 {
+    padding-top: 7px;
+	color: #ececec;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.game_text2 {
+    padding-top: 7px;
+	color: #ececec;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.game_text3{
+    padding-top: 7px;
+	color: #ececec;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.game_text4{
+    padding-top: 7px;
+	color: #ececec;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+/*                                        ПОДВАЛ                        */
+.footer {
+    background: black;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.name_footer {
+    text-decoration: none;
+	color: #b8860b;
+}
+.footer-text {
+	color: #ececec;
+    padding-left: 10px;
+}
